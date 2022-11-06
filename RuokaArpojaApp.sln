@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuokaArpojaApp.Android", "RuokaArpojaApp.Android\RuokaArpojaApp.Android.csproj", "{CBB87F4F-04DE-4BA9-AB1D-5A916E15E9AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuokaArpojaApp", "RuokaArpojaApp\RuokaArpojaApp.csproj", "{8B712680-8CE4-49C3-9C57-E74661450BDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBB87F4F-04DE-4BA9-AB1D-5A916E15E9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB87F4F-04DE-4BA9-AB1D-5A916E15E9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB87F4F-04DE-4BA9-AB1D-5A916E15E9AB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CBB87F4F-04DE-4BA9-AB1D-5A916E15E9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB87F4F-04DE-4BA9-AB1D-5A916E15E9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBB87F4F-04DE-4BA9-AB1D-5A916E15E9AB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8B712680-8CE4-49C3-9C57-E74661450BDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B712680-8CE4-49C3-9C57-E74661450BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B712680-8CE4-49C3-9C57-E74661450BDC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8B712680-8CE4-49C3-9C57-E74661450BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B712680-8CE4-49C3-9C57-E74661450BDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B712680-8CE4-49C3-9C57-E74661450BDC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {158F921C-2E98-41EF-8D14-9772A9575DC8}
+	EndGlobalSection
+EndGlobal

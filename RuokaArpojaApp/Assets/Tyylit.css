@@ -1,0 +1,26 @@
+﻿.frame
+{
+    background-color: olivedrab;
+    padding: 50;
+}
+
+.otsikko {
+    color: white;
+    font-size: 32;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ruokaehdotus {
+    font-size: 28;
+    color: black;
+    padding-top: 100;
+    padding-bottom: 100;
+}
+
+.nappula {
+    background-color: darkolivegreen;
+    padding: 15;
+    border-radius: 15;
+    color: white;
+    margin: 10;
+}

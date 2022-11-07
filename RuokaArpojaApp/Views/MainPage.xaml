@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RuokaArpojaApp.MainPage">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/Assets/Tyylit.css"/>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Frame StyleClass="frame">
+            <Label Text="Mitä tänään syötäisiin?" StyleClass="otsikko" HorizontalTextAlignment="Center"/>
+        </Frame>
+        <Label x:Name="tamanPaivanEhdotus" StyleClass="ruokaehdotus" HorizontalTextAlignment="Center"></Label>
+        <Button x:Name="btn_arvoEhdotus" Clicked="btn_arvoEhdotus_Clicked" Text="Arvo ehdotus" StyleClass="nappula" HorizontalOptions="CenterAndExpand"></Button>
+        <Button x:Name="btn_kaikkiVaihtoehdot" Clicked="btn_kaikkiVaihtoehdot_Clicked" Text="Katso kaikki" StyleClass="nappula" HorizontalOptions="CenterAndExpand"></Button>
+    </StackLayout>
+
+</ContentPage>

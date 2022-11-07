@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RuokaArpojaApp.Views.LisaaUusiPage"
+             Title="Lisää uusi">
+    <StackLayout>
+        <Label Text="Ruuan nimi?"></Label>
+        <Entry x:Name="ruokaEntry" Text="{Binding RuuanNimi}"/>
+        <Button x:Name="lisaysNappula" Text="Tallenna" Clicked="lisaysNappula_Clicked"/>
+    </StackLayout>
+</ContentPage>

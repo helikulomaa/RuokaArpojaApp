@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using RuokaArpojaApp.Models;
+using RuokaArpojaApp.Data;
+using SQLite;
 
 namespace RuokaArpojaApp
 {
@@ -16,13 +18,20 @@ namespace RuokaArpojaApp
             InitializeComponent();
         }
 
-        private void btn_arvoEhdotus_Clicked(object sender, EventArgs e)
+        async private void btn_arvoEhdotus_Clicked(object sender, EventArgs e)
         {
-            List<String> vaihtoehdot = new List<String>() { "Makaronilaatikko", "Nakkikastike ja perunat", "Uuniperunat", "Tortillot", "Pitsa", "Pinaattikeitto", "Kasvissosekeitto", "Hernekeitto" };
-            Random rnd = new Random();
-            int i = rnd.Next(0, 8);
+            var vaihtoehdot = await App.Database.HaeRuuatAsync();
+            List<string> vaihtoehtoLista = new List<string>();
 
-            tamanPaivanEhdotus.Text = vaihtoehdot[i];
+            foreach (var vaihtoehto in vaihtoehdot)
+            {
+                vaihtoehtoLista.Add(vaihtoehto.RuuanNimi);
+            }
+
+            Random rnd = new Random();
+            int i = rnd.Next(0, vaihtoehtoLista.Count);
+
+            tamanPaivanEhdotus.Text = vaihtoehtoLista[i];
             btn_arvoEhdotus.Text = "Arvo uudeleen!";
         }
 

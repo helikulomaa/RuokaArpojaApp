@@ -3,9 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RuokaArpojaApp.Views.LisaaUusiPage"
              Title="Lisää uusi">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/Assets/Tyylit.css"/>
+    </ContentPage.Resources>
+    
     <StackLayout>
-        <Label Text="Ruuan nimi?"></Label>
+        <Label Text="Ruuan nimi?" FontSize="Medium" TextColor="Black" Margin="30"></Label>
         <Entry x:Name="ruokaEntry" Text="{Binding RuuanNimi}"/>
-        <Button x:Name="lisaysNappula" Text="Tallenna" Clicked="lisaysNappula_Clicked"/>
+        <Button StyleClass="nappula" x:Name="lisaysNappula" Text="Tallenna" Clicked="lisaysNappula_Clicked"/>
+        <Button StyleClass="nappula" x:Name="palaaNappula" Text="Palaa listaan" Clicked="palaaNappula_Clicked"></Button>
     </StackLayout>
 </ContentPage>

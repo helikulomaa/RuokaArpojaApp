@@ -7,9 +7,9 @@
     </ContentPage.Resources>
     
     <StackLayout>
-        <Button x:Name="lisaaUusinappula" Text="Lisää uusi" StyleClass="nappula" Clicked="lisaaUusinappula_Clicked"></Button>
+        <Button x:Name="lisaaUusinappula" Text="Lisää uusi" StyleClass="nappula" Clicked="lisaaUusinappula_Clicked" Margin="10, 10, 10, 0"></Button>
         <!-- Näytä ruuat listana -->
-    <CollectionView x:Name="collectionView"
+        <CollectionView x:Name="collectionView"
                     Margin="20"
                     SelectionMode="Single">
             <CollectionView.ItemsLayout>
@@ -17,13 +17,14 @@
                                ItemSpacing="10" />
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <StackLayout>
-                    <Label Text="{Binding RuuanNimi}"
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding RuuanNimi}"
                            FontSize="Medium"/>
-                </StackLayout>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button x:Name="poistoNappula" StyleClass="nappula" Text="Poista" Clicked="poistoNappula_Clicked" Margin="10, 0, 10, 10"></Button>
     </StackLayout>
 </ContentPage>

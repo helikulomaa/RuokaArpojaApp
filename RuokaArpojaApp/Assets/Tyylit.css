@@ -1,6 +1,6 @@
 ﻿.frame
 {
-    background-color: olivedrab;
+    background-color: cornflowerblue;
     padding: 50;
 }
 
@@ -18,9 +18,10 @@
 }
 
 .nappula {
-    background-color: darkolivegreen;
+    background-color: darkslateblue;
     padding: 15;
     border-radius: 15;
     color: white;
-    margin: 10;
+    margin-right: 10;
+    margin-left: 10;
 }

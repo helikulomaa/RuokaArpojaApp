@@ -43,7 +43,7 @@ namespace RuokaArpojaApp.Data
             }
         }
 
-        public Task<int> DeleteNoteAsync(Ruoka ruoka)
+        public Task<int> PoistaRuokaAsync(Ruoka ruoka)
         {
             // Poista ruoka.
             return database.DeleteAsync(ruoka);

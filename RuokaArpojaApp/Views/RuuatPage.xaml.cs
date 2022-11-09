@@ -14,6 +14,7 @@ namespace RuokaArpojaApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RuuatPage : ContentPage
     {
+
         public RuuatPage()
         {
             InitializeComponent();
@@ -32,17 +33,12 @@ namespace RuokaArpojaApp
             await Navigation.PushAsync(new LisaaUusiPage());
         }
 
-        Ruoka lastSelection;
-        void collectionView_SelectionChanged(System.Object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
-        {
-            lastSelection = e.SelectedItem as Ruoka;
-        }
-
         async void poistoNappula_Clicked(object sender, EventArgs e)
         {
-            if(lastSelection != null)
+            Ruoka ruoka = (Ruoka)collectionView.SelectedItem;
+            if(ruoka != null)
             {
-            await App.Database.PoistaRuokaAsync(lastSelection);
+            await App.Database.PoistaRuokaAsync(ruoka);
             collectionView.ItemsSource = await App.Database.HaeRuuatAsync();
             }
         }

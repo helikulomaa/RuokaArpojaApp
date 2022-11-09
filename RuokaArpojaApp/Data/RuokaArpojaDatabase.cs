@@ -21,13 +21,13 @@ namespace RuokaArpojaApp.Data
             return database.Table<Ruoka>().ToListAsync();
         }
 
-        public Task<Ruoka> HaeRuuatAsync(int id)
-        {
-            // Tuo tietyn ruuan.
-            return database.Table<Ruoka>()
-                            .Where(i => i.ID == id)
-                            .FirstOrDefaultAsync();
-        }
+        //public Task<Ruoka> HaeRuuatAsync(int id)
+        //{
+        //    // Tuo tietyn ruuan.
+        //    return database.Table<Ruoka>()
+        //                    .Where(i => i.ID == id)
+        //                    .FirstOrDefaultAsync();
+        //}
 
         public Task<int> TallennaRuokaAsync(Ruoka ruoka)
         {

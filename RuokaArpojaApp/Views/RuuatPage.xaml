@@ -25,6 +25,6 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-        <Button x:Name="poistoNappula" StyleClass="nappula" Text="Poista" Clicked="poistoNappula_Clicked" Margin="10, 0, 10, 10"></Button>
+        <Button x:Name="poistoNappula" StyleClass="nappula" Text="Poista valittu" Clicked="poistoNappula_Clicked" Margin="10, 0, 10, 10"></Button>
     </StackLayout>
 </ContentPage>
